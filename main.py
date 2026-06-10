@@ -3,17 +3,17 @@ import telebot,time
 from telebot import types
 from gatet import Tele
 import os
-token = '7968407296:AAECEJdAzjjGDQ4To-ZJTSDEJn3f_gd2uGk'
+token = '8820232602:AAHVVDtSCgE0TZi0lzySDtp4of8VfZF18k4'
 bot=telebot.TeleBot(token,parse_mode="HTML")
 @bot.message_handler(commands=["start"])
 def start(message):
-	if not str(message.chat.id) == '7954343626':
+	if not str(message.chat.id) == '8085966245':
 		bot.reply_to(message, "You cannot use the bot to contact developers to purchase a bot subscription @strawhatchannel96")
 		return
 	bot.reply_to(message,"Send the file now")
 @bot.message_handler(content_types=["document"])
 def main(message):
-	if not str(message.chat.id) == '7954343626':
+	if not str(message.chat.id) == '8085966245':
 		bot.reply_to(message, "You cannot use the bot to contact developers to purchase a bot subscription @strawhatchannel96")
 		return
 	dd = 0
